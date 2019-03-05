@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fragment_login_main"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorMainDark">
+
+    <ScrollView
+            android:id="@+id/scroll_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/layout_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                        android:id="@+id/textView_login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/colorDirtyWhite"
+                        android:textColor="@color/colorDirtyWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_log_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:backgroundTint="@color/colorDirtyWhite"
+                        android:textColor="@color/colorDirtyWhite"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:id="@+id/btn_login_signIn"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_sign_in"
+                    android:textStyle="bold"
+                    android:background="@color/colorDirtyWhite"
+                    android:textColor="@color/colorMainDark"
+                    android:onClick="signInOnClick"
+                   />
+
+
+
+            <TextView
+                    android:id="@+id/textView_login_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_registration"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:onClick="linkRegistrationOnClick"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

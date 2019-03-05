@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/textView_main_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Welcome, now you can watch your beast progress.."
+            android:layout_marginTop="20dp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+    <View
+            android:id="@+id/item_training_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_welcome"
+            app:layout_constraintBottom_toTopOf="@+id/textView_main_cons"/>
+
+    <TextView
+            android:id="@+id/textView_main_cons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_welcome"
+            android:text="CONS"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+    <ListView
+            android:id="@+id/listView_main_cons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_list_item"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_cons"/>
+
+    <TextView
+            android:id="@+id/textView_main_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/listView_main_cons"
+            android:text="GOALS"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+    <ListView
+            android:id="@+id/listView_main_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_goals"
+            android:background="@drawable/border_list_item"
+            android:layout_margin="15dp"
+            android:padding="10dp"/>
+
+    <TextView
+            android:id="@+id/textView_main_pros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/listView_main_goals"
+            android:text="PROS"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+    <ListView
+            android:id="@+id/listView_main_pros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_pros"
+            android:background="@drawable/border_list_item"
+            android:layout_margin="15dp"
+            android:padding="10dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

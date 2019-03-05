@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/wallpaper"
+                                             android:id="@+id/tab_newOne_layout">
+
+    <ScrollView
+            android:id="@+id/scroll_newOne_trained"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            >
+
+        <LinearLayout
+                android:id="@+id/layout_trained_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+            <Switch
+                    android:id="@+id/switch_newOne_trained_trainerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/yellow"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp"
+                    android:text="@string/trainer"
+                    android:textOn="@string/trainer"
+                    android:textOff="@string/student"
+                    android:checked="false"
+                    android:theme="@style/CustomSwitch"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/date"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callDatePickerTrainedDate"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/start_time"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callTimePickerStartTime"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_gym"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/gym"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_training_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/training_content"
+                        android:inputType="textMultiLine"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/training_time"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callTimePickerTrainedTime"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_sparing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/sparing_time"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callTimePickerTrainedSparing"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_pros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/pros"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGreen"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_cons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/cons"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/colorRed"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/goal"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/colorDirtyWhite"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_trainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/trainer"
+                        android:inputType="textMultiLine"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_trained_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/note"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:id="@+id/button_newOne_trained"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/yellow"
+                    android:onClick="clickAddNewOneTrained"
+                    android:text="@string/okey"
+                    android:textColor="@color/colorMainDark"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

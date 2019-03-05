@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "320281226965",
+    "firebase_url": "https://beastvisordb.firebaseio.com",
+    "project_id": "beastvisordb",
+    "storage_bucket": "beastvisordb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320281226965:android:225bb9f6adeefae4",
+        "android_client_info": {
+          "package_name": "com.licktrip.beastvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320281226965-m7518da8kmq5ar0gdrieak230p9ec561.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.licktrip.beastvisor",
+            "certificate_hash": "02db9ac744f1d5aee2729de0a4f1cadf8eeca564"
+          }
+        },
+        {
+          "client_id": "320281226965-gq1k1p81m9e9iehd7oi44bti5j186323.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL03HrVeIg-dceSIuP3DAdEDZVu4EwHL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320281226965-gq1k1p81m9e9iehd7oi44bti5j186323.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

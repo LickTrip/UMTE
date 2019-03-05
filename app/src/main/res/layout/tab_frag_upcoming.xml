@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/wallpaper">
+
+    <ScrollView
+            android:id="@+id/scroll_newOne_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+        <LinearLayout
+                android:id="@+id/layout_upcoming_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+            <Switch
+                    android:id="@+id/switch_newOne_upcoming_trainerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/yellow"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp"
+                    android:text="@string/trainer"
+                    android:textOn="@string/trainer"
+                    android:textOff="@string/student"
+                    android:checked="false"
+                    android:theme="@style/CustomSwitch"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_upcoming_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/date"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callTimePickerUpcomingDate"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_upcoming_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/start_time"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:onClick="callTimePickerUpcomingStartTime"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_upcoming_gym"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/gym"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_upcoming_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/goal"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/colorDirtyWhite"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_upcoming_trainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/trainer"
+                        android:inputType="textMultiLine"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editText_newOne_upcoming_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/yellow"
+                        android:hint="@string/note"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:singleLine="true"
+                        android:textColor="@color/yellow"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Switch
+                    android:id="@+id/switch_newOne_upcoming_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/yellow"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp"
+                    android:text="@string/repeat"
+                    android:checked="false"
+                    android:theme="@style/CustomSwitch"/>
+
+            <TextView
+                    android:id="@+id/textView_newOne_upcoming_repeat_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/yellow"
+                    android:text="Count"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+            <Spinner
+                    android:id="@+id/spinner_newOne_upcoming_repeat_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:id="@+id/textView_newOne_upcoming_repeat_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/yellow"
+                    android:text="@string/repeat_after_x_days"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+
+            <Spinner
+                    android:id="@+id/spinner_newOne_upcoming_repeat_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+            <Button
+                    android:id="@+id/button_newOne_upcoming"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/yellow"
+                    android:onClick="clickAddNewOneUpcoming"
+                    android:text="@string/okey"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorMainDark"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/textView_newOne_upcoming_helper_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow"
+                    android:visibility="gone"
+                    android:text="@string/helper_after"/>
+
+            <TextView
+                    android:id="@+id/textView_newOne_upcoming_helper_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow"
+                    android:visibility="gone"
+                    android:text="@string/helper_count"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

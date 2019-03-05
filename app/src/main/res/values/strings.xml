@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <!--labels names and valid-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_conf">Confirm Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_surname">Surname</string>
+    <string name="prompt_nick">Nick</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="log_registration">
+        <u>Registration</u>
+    </string>
+    <!--***-->
+    <!--Registration err-->
+    <string name="pass_match">Passwords are not same. Please fill passwords again</string>
+    <string name="reg_successful">Registration was successful. Please login</string>
+    <string name="reg_auth_err">User authentication error</string>
+    <string name="reg_db_err">Database error</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="app_name">Beastvisor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_stats">Stats</string>
+    <string name="menu_trainings">Trainings</string>
+    <string name="menu_cons_pros">C - P - G</string>
+    <string name="menu_goals_technique">Techniques</string>
+    <string name="menu_h_about_app">About app</string>
+    <string name="menu_about">About</string>
+    <string name="title_activity_new_one">NewOneActivity</string>
+    <string name="newOne_tab_text_1">Techniques</string>
+    <string name="newOne_tab_text_2">Goals</string>
+    <string name="newOne_tab_text_3">Upcoming</string>
+    <string name="newOne_tab_text_4">Trained</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="newOne_train_type">TYPE</string>
+    <string name="newOne_train_trained">TRAINED</string>
+    <string name="newOne_train_upcoming">UPCOMING</string>
+    <string name="okey">OKey</string>
+    <string name="note">Note</string>
+    <string name="goal">Goal</string>
+    <string name="cons">Cons</string>
+    <string name="pros">Pros</string>
+    <string name="sparing_time">Sparing time</string>
+    <string name="training_content">Training content</string>
+    <string name="gym">Gym</string>
+    <string name="training_time">Training time</string>
+    <string name="date">Date</string>
+    <string name="trainer">Trainer</string>
+    <string name="student">Student</string>
+    <string name="start_time">Start time</string>
+    <string name="repeat">Repeat</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="source">Source</string>
+    <string name="repeat_after_x_days">Repeat after X days</string>
+    <string name="helper_after">Helper_after</string>
+    <string name="helper_count">Helper_count</string>
+    <string name="title_activity_cpg">CpgActivity</string>
+    <string name="cpg_tab_text_1">Pros</string>
+    <string name="cpg_tab_text_2">Cons</string>
+    <string name="cpg_tab_text_3">Goals</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_trainings">TrainingsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <!--<string-array name="one_ten_array">-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--<item>3</item>-->
+    <!--<item>4</item>-->
+    <!--<item>5</item>-->
+    <!--<item>6</item>-->
+    <!--<item>7</item>-->
+    <!--<item>8</item>-->
+    <!--<item>9</item>-->
+    <!--<item>10</item>-->
+    <!--</string-array>-->
+</resources>
